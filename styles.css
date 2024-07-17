@@ -1,0 +1,54 @@
+@media (max-width: 576px) {
+    .my-pic {
+        width: 250px;
+        height: 250px;
+        top: 35%;
+    }
+}
+
+@media (min-width: 577px) and (max-width: 769px) {
+    .my-pic {
+        width: 290px;
+        height: 290px;
+        top: 35%;
+    }
+}
+
+@media (min-width: 770px) and (max-width: 991px) {
+    .my-pic {
+        width: 330px;
+        height: 330px;
+        top: 35%;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+    .my-pic {
+        width: 370px;
+        height: 370px;
+        top: 32%;
+    }
+}
+
+@media (min-width: 1201px) {
+    .my-pic {
+        width: 410px;
+        height:410px;
+        top: 29%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
