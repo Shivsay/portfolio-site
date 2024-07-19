@@ -11,97 +11,190 @@
     </head>
     <body>
 
-        <nav id="main-navbar" class="navbar fixed-top bg-body-tertiary px-3 mb-3">
-          <a class="navbar-brand" href="#">Navbar</a>
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link" href="#home">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#portfolio">Portfolio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#resume">Resume</a>
-            </li>
-          </ul>
+        <nav id="main-navbar" class="navbar navbar-expand-lg fixed-top bg-body-tertiary px-3 mb-3">
+                <a class="navbar-brand" href="#">Shiv Sanjay</a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav nav-pills ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#resume">Resume</a>
+                    </li>
+                </ul>
+                </div>
         </nav>
-
-        <div id="home" class="vh-100 container-fluid text-center">
-            <div class="h-50 row border">
-                <div class="h-100 col bg-primary">
-                    <p class="display-1 text-center mt-5 pt-5">Hi there!!</p>
-                </div> 
-                <div class="text-center">
-                    <img src="rando-indian.jpg" class="my-pic rounded-circle border z-2 position-absolute translate-middle-x"></img>
-                </div> 
-            </div>
-            <!-- <div class="text-center" style="top: 45vh;">
-                <img src="rando-indian.jpg" class="img-thumbnail z-2 position-absolute translate-middle-x" style="width: 200px; height: 200px; top: 40vh;"></img>
-</div> -->
-
-            <div class="h-50 row border">
-                <div class="col bg-secondary">
-                    <p></p>
-                </div> 
-            </div>
-        </div>
-
-
-        <div id="portfolio" class="container-md">
-        </div>
-
-        <div id="resume" class="container-fluid bg-info text-center">
-            <div class="row">
-                <p class="display-3">EDUCATION</p>
-                <div class="col">
-                    <p class="fs-3 fw-normal">Schooling</p>
-                    <p class="fs-5 fw-light">Christ Nagar Central School</p>
+        <div data-bs-spy="scroll" data-bs-target="#main-navbar" data-bs-smooth-scroll="true" class="scrollspy bg-body-tertiary" tabindex="0">
+    
+            <div id="home" class="vh-100 container-fluid text-center position-relative">
+                <div class="h-50 row border align-items-center bg-primary">
+                    <div class="col position-absolute top-0 start-50 translate-middle-x pt-5">
+                        <p class="display-1">Hi there!!</p>
+                        <p class="display-1">My name is</p>
+                    </div> 
                 </div>
-                <div class="col">
-                    <p class="fs-3 fw-normal">College</p>
-                    <p class="fs-5 fw-light">Mar Baselious College of Engineering and Technology</p>
+
+                    <div class="text-center">
+                        <img src="mypic.jpg" class="my-pic rounded-circle object-fit-cover border z-2 position-absolute top-50 start-50 translate-middle"></img>
+                    </div> 
+                <div class="h-50 row border text-bg-secondary">
+                    <div class="col position-absolute bottom-0 start-50 translate-middle-x pb-md-5 pb-4">
+                    <div class="col-12">
+                        <p class="display-3 text-white">Shiv Sanjay</p>
+                    </div>
+                    <div class="col-12">
+                        <p class="fs-5 fw-normal">A Computer Science and Engineering student who values 
+                            curiosity and is passionate about learning through experimentation.</p>
+                    </div> 
+                    </div>
                 </div>
             </div>
 
-            <div class="row">
-                <p class="display-3">INTERNSHIP</p>
-                <div class="col">
-                    <p class="fs-5 fw-light">Ascia Technologies,Kerala,India</p>
-                    <p class="fs-5 fw-light">Selected as one of 16 participants for a 1-week online training program in object-oriented programming in C++,based on academic success.</p>
+            <!-- <div id="about" class="container-fluid text-center pb-5">
+                <p class="display-3">Shiv Sanjay</p>
+                <p>A Computer Science and Engineering student who values 
+                    curiosity and is passionate about learning through experimentation. </p>
                 </div>
+            -->
+
+
+            <div id="portfolio" class="container-fluid text-bg-warning pt-5 pb-5">
+                <div class="row text-center"> 
+                    <p class="display-3">Portfolio</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                              <img src="webpAIge.png" class="card-img-top h-100" alt="webpAIge image">
+                              <div class="card-body">
+                                <h5 class="card-title">webpAIge</h5>
+                                <p class="card-text">webpAIge unlocks real-time conversations with webpages powered by the Pathways framework.</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/Shivsay/webpAIge" class="card-link">Github</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                              <img src="pyhack.png" class="card-img-top h-100" alt="pyhack image">
+                              <div class="card-body">
+                                <h5 class="card-title">Pyhack</h5>
+                                <p class="card-text">A HackerNews front-end application built using tkinter.</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/Shivsay/pyhack" class="card-link">Github</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                              <img src="identity-logger.jpg" class="card-img-top h-100" alt="identity-logger image">
+                              <div class="card-body">
+                                <h5 class="card-title">identity-logger</h5>
+                                <p class="card-text">identity-logger is an application used to view data on people you know.</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/Shivsay/identity-logger" class="card-link">Github</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row text-center"> 
+                    <p class="display-4 pt-4">Hackathons</p>
+                </div>
+                <div class="row row-cols-1 row-cols-md-2 g-4">
+                    <div class="col">
+                        <div class="card h-100">
+                              <img src="fact-checker.jpg" class="card-img-top h-100" alt="Fact checking extension image">
+                              <div class="card-body">
+                                <h5 class="card-title">Fact Checker</h5>
+                                <p class="card-text">Browser extension for fighting misinformation and promoting media literacy.</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/kevin-ai-04/Define24-Identifier_Expected" class="card-link">Github</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card h-100">
+                              <img src="rights-quest.png" class="card-img-top object-fit-scale h-100" alt="rights-quest image" style="max-height: 337px;;">
+                              <div class="card-body">
+                                <h5 class="card-title">RightsQuest</h5>
+                                <p class="card-text">Gamified platform on Children's Rights to increase legal literacy and awareness among children in India</p>
+                                <div class="card-footer">
+                                    <a href="https://github.com/techtitansmbcet2023/RightsQuest" class="card-link">Github</a>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
-            <div class="row">
-                <p class="display-3">SKILLS</p>
-                <div class="col">
-                    Java
-                </div> 
-                <div class="col">
-                    C
-                </div> 
-                <div class="col">
-                    Python
+            <div id="resume" class="container-fluid text-center p-3 text-bg-dark">
+                <div class="row">
+                    <p class="display-3">EDUCATION</p>
+                    <div class="col">
+                        <p class="fs-3 fw-normal">Schooling</p>
+                        <p class="fs-5 fw-light">Christ Nagar Central School</p>
+                    </div>
+                    <div class="col">
+                        <p class="fs-3 fw-normal">College</p>
+                        <p class="fs-5 fw-light">Mar Baselious College of Engineering and Technology</p>
+                    </div>
                 </div>
-                <div class="col">
-                    C++
-                </div>
-                <div class="col">
-                    HTML
-                </div> 
-                <div class="col">
-                    CSS
-                </div> 
-                <div class="col">
-                    JavaScript
-                </div>
-            </div>
 
-            <div class="row"> 
-                <p class="display-3">LANGUAGES</p>
-                <div class="col">
-                    <p>Malayalam: Native</p>
-                    <p>English: Fluent</p>
-                    <p>Hindi: Conversant</p>
+                <div class="row">
+                    <p class="display-3">INTERNSHIP</p>
+                    <div class="col">
+                        <p class="fs-5 fw-normal">Ascia Technologies,Kerala,India</p>
+                        <p class="fs-5 fw-light">Selected as one of 16 participants for a 1-week online training program in object-oriented programming in C++,based on academic success.</p>
+                    </div>
+                </div>
+                <div class="container-md">
+                <div class="row row-cols-md-3 p-5 gy-4 justify-content-center">
+                    <p class="display-3 col-md-12 text-primary">SKILLS</p>
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">Java</span>
+                    </div> 
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">C</span>
+                    </div> 
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">Python</span>
+                    </div>
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">C++</span>
+                    </div>
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">HTML</span>
+                    </div> 
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">CSS</span>
+                    </div> 
+                    <div class="col">
+                        <span class="border border-2 border-primary rounded-pill p-2">JavaScript</span>
+                    </div>
+                </div>
+                </div>
+
+                <div class="row"> 
+                    <p class="display-3">LANGUAGES</p>
+                    <div class="col">
+                        <p>Malayalam: Native</p>
+                        <p>English: Fluent</p>
+                        <p>Hindi: Conversant</p>
+                    </div>
                 </div>
             </div>
         </div>
