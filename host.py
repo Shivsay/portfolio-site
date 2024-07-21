@@ -85,5 +85,6 @@ def create_web_bucket(bucket_name, s3_client):
     s3_client.put_bucket_policy(Bucket=bucket_name, Policy=bucket_policy)
 
 
+# Add a bucket name and region here
 success = create_bucket("say-portfolio-bucket")
 print("Success")

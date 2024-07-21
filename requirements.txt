@@ -1,6 +1,0 @@
-User needs PutBucketPolicy permission
-PutBucketPublicAccessBlock
-
-For delete
-DeleteBucket
-DeleteObject
