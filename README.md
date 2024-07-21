@@ -30,6 +30,8 @@ To call the scripts, use the following commands:
 - `python host.py`
 - `python delete_host.py`
 
+To get the endpoint open the AWS S3 console, go to `Properties` tab in your bucket, scroll to the bottom and find the `Static Website hosting` section to get the url.
+
 ## Updation guide
 
 In both the scripts the file's are added individually. If you need to add other resources, you'll need to modify the script accordingly.

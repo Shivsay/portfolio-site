@@ -3,6 +3,7 @@ import boto3
 from botocore.exceptions import ClientError
 
 def delete_all_objects(bucket_name,s3_client):
+    # The Key field is for the name of the file
     s3_client.delete_objects(
         Bucket=bucket_name,
         Delete={
@@ -36,16 +37,22 @@ def delete_all_objects(bucket_name,s3_client):
     )
 
 def delete_bucket(bucket_name, region=None):
+    """Deleting an S3 bucket in a specified region
+
+    If a region is not specified, the bucket is deleted in the S3 default
+    region (us-east-1).
+
+    :param bucket_name: Bucket to create
+    :param region: String region to create bucket in, e.g., 'us-west-2'
+    :return: True if bucket deleted, else False
+    """
 
     print("Connecting...")
     try:
         if region is None:
             s3_client = boto3.client('s3')
-            s3_client.create_bucket(Bucket=bucket_name)
         else:
             s3_client = boto3.client('s3', region_name=region)
-            location = {'LocationConstraint': region}
-            s3_client.create_bucket(Bucket=bucket_name, CreateBucketConfiguration=location)
 
     except ClientError as e:
         logging.error(e)
@@ -60,5 +67,6 @@ def delete_bucket(bucket_name, region=None):
     return True
 
 
-success = delete_bucket("say-portfolio-bucket")
+# Add a bucket name and region here
+success = delete_bucket("your bucket name here")
 print("Success")

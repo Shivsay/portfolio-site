@@ -86,5 +86,5 @@ def create_web_bucket(bucket_name, s3_client):
 
 
 # Add a bucket name and region here
-success = create_bucket("say-portfolio-bucket")
+success = create_bucket("your bucket name here")
 print("Success")
