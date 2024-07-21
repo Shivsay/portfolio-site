@@ -86,3 +86,4 @@ def create_web_bucket(bucket_name, s3_client):
 
 
 success = create_bucket("say-portfolio-bucket")
+print("Success")
