@@ -2,7 +2,14 @@ body {
     padding-top: 55px;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 303px) {
+    .my-pic {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (min-width: 304px) and (max-width: 576px) {
     .my-pic {
         width: 230px;
         height: 230px;
